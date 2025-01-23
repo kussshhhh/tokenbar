@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Claude Token Bar",
+  "version": "1.0",
+  "description": "Tracks token count in Claude chat",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://claude.ai/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
